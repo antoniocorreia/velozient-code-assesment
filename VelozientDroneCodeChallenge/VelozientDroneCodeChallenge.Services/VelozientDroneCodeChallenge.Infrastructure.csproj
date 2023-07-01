@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VelozientDroneCodeChallenge.Domain\VelozientDroneCodeChallenge.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

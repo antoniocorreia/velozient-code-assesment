@@ -8,6 +8,6 @@ namespace VelozientDroneCodeChallenge.Infrasctructure.Parser
 {
     internal interface IParser
     {
-        List<T> Parse<T>(string input);
+        List<T> Parse<T>(IEnumerable<string> input);
     }
 }
