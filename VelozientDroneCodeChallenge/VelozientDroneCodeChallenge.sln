@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33717.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelozientDroneCodeChallenge", "VelozientDroneCodeChallenge\VelozientDroneCodeChallenge.csproj", "{07400AEB-F8BF-48C1-809E-8EE1112ABD0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VelozientDroneCodeChallenge.App", "VelozientDroneCodeChallenge\VelozientDroneCodeChallenge.App.csproj", "{07400AEB-F8BF-48C1-809E-8EE1112ABD0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelozientDroneCodeChallenge.Tests", "VelozientDroneCodeChallenge.Tests\VelozientDroneCodeChallenge.Tests.csproj", "{82074ED7-F767-4A33-B8C1-BEEAD84B1507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VelozientDroneCodeChallenge.App.UnitTests", "VelozientDroneCodeChallenge.Tests\VelozientDroneCodeChallenge.App.UnitTests.csproj", "{82074ED7-F767-4A33-B8C1-BEEAD84B1507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelozientDroneCodeChallenge.Services", "VelozientDroneCodeChallenge.Services\VelozientDroneCodeChallenge.Services.csproj", "{0A17A4A6-1ABC-47AC-A6C1-C24B6EAC5CAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VelozientDroneCodeChallenge.Infrastructure", "VelozientDroneCodeChallenge.Services\VelozientDroneCodeChallenge.Infrastructure.csproj", "{0A17A4A6-1ABC-47AC-A6C1-C24B6EAC5CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelozientDroneCodeChallenge.Domain", "VelozientDroneCodeChallenge.Domain\VelozientDroneCodeChallenge.Domain.csproj", "{C5B13A98-5705-4963-92D3-0FE9954FC00D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0A17A4A6-1ABC-47AC-A6C1-C24B6EAC5CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A17A4A6-1ABC-47AC-A6C1-C24B6EAC5CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A17A4A6-1ABC-47AC-A6C1-C24B6EAC5CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B13A98-5705-4963-92D3-0FE9954FC00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B13A98-5705-4963-92D3-0FE9954FC00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B13A98-5705-4963-92D3-0FE9954FC00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B13A98-5705-4963-92D3-0FE9954FC00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VelozientDroneCodeChallenge.Parser
+namespace VelozientDroneCodeChallenge.Infrasctructure.Parser
 {
     public class DroneParser : IParser
     {

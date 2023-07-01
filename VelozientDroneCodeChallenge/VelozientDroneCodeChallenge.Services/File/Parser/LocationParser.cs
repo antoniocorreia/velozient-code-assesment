@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VelozientDroneCodeChallenge.Service
+namespace VelozientDroneCodeChallenge.Infrasctructure.Parser
 {
-    public class DeliveryScheduler
+    public class LocationParser : IParser
     {
-        public static object Execute(object dronesAndLocations)
+        public List<T> Parse<T>(string input)
         {
             throw new NotImplementedException();
         }

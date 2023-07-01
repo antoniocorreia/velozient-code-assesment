@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VelozientDroneCodeChallenge.File
+namespace VelozientDroneCodeChallenge.Infrasctructure.Services
 {
-    internal interface IFile
+    public interface IScheduler
     {
     }
 }

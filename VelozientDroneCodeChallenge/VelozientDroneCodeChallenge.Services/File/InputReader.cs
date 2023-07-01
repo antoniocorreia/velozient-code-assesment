@@ -4,13 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VelozientDroneCodeChallenge.Services.File
+namespace VelozientDroneCodeChallenge.Infrasctructure
 {
     public class InputReader
     {
-        public static object ReadFile(string v)
+        public static void ReadFile(string path)
         {
-            throw new NotImplementedException();
+            var enumLines = File.ReadLines(path, Encoding.UTF8);
+
+            foreach (var line in enumLines)
+            {
+                Console.WriteLine(line);
+            }
         }
     }
 }

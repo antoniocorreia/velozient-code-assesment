@@ -1,11 +1,8 @@
-﻿using VelozientDroneCodeChallenge.Model;
-using VelozientDroneCodeChallenge.Services.Delivery;
-using VelozientDroneCodeChallenge.Services.File;
+﻿using VelozientDroneCodeChallenge.Infrasctructure;
 
+InputReader.ReadFile("Assets/Input.txt");
+//var dronesAndLocations = InputReader.ReadFile("Assets/Input.txt");
 
+//var result = DeliveryScheduler.Execute(dronesAndLocations);
 
-var dronesAndLocations = InputReader.ReadFile("filepath");
-
-var result = DeliveryScheduler.Execute(dronesAndLocations);
-
-OutputWriter.Write(result);
+OutputWriter.Write("Assets/Output.txt","generated");
