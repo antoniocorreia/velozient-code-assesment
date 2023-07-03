@@ -1,0 +1,4 @@
+﻿global using VelozientDroneCodeChallenge.Application;
+global using VelozientDroneCodeChallenge.Infrasctructure;
+global using VelozientDroneCodeChallenge.Infrasctructure.Services;
+global using VelozientDroneCodeChallenge.Application.Model;

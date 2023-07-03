@@ -1,29 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VelozientDroneCodeChallenge.Infrasctructure.Parser;
-using VelozientDroneCodeChallenge.Model;
+﻿using System.Text;
+using VelozientDroneCodeChallenge.Application.Model;
 
-namespace VelozientDroneCodeChallenge.Infrasctructure
+namespace VelozientDroneCodeChallenge.Infrasctructure;
+
+public class InputReader
 {
-    public class InputReader
+    public static FileResult ReadFile(string path)
     {
-        public static void ReadFile(string path)
-        {
-            var enumLines = File.ReadLines(path, Encoding.UTF8);
+        var enumLines = File.ReadLines(path, Encoding.UTF8);
 
-            foreach (var line in enumLines)
-            {
-                Console.WriteLine(line);
-            }
+        DroneParser droneParser = new DroneParser();
+        List<Drone> drones = droneParser.Parse<Drone>(enumLines);
 
-            DroneParser droneParser = new DroneParser();
-            List<Drone> drones = droneParser.Parse<Drone>(enumLines);
+        LocationParser locationParser = new LocationParser();
+        List<Location> locations = locationParser.Parse<Location>(enumLines);
 
-            LocationParser locationParser = new LocationParser();
-            List<Location> locations = locationParser.Parse<Location>(enumLines);
-        }
+        return new FileResult(drones, locations);
     }
 }
+

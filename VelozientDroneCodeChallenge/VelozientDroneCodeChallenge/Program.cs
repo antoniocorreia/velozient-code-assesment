@@ -1,8 +1,5 @@
-﻿using VelozientDroneCodeChallenge.Infrasctructure;
+﻿FileResult listOfDronesAndLocations = InputReader.ReadFile("Assets/Input.txt");
 
-InputReader.ReadFile("Assets/Input.txt");
-//var dronesAndLocations = InputReader.ReadFile("Assets/Input.txt");
+var trips = new DeliveryScheduler().Execute(listOfDronesAndLocations);
 
-//var result = DeliveryScheduler.Execute(dronesAndLocations);
-
-OutputWriter.Write("Assets/Output.txt","generated");
+OutputWriter.Write("Assets/Output.txt", trips);

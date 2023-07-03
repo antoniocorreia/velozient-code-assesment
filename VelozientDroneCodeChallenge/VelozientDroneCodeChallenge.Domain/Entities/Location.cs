@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VelozientDroneCodeChallenge.Model
+﻿namespace VelozientDroneCodeChallenge.Domain.Entities;
+public class Location
 {
-    public class Location
+    public string Name { get; }
+    public int PackageWeight { get; set; }
+    public Location(string name, int packageWeight)
     {
-        public string Name { get; set; }
-        public int PackageWeight { get; set; }
+        this.Name = name;
+        this.PackageWeight = packageWeight;
     }
+
 }

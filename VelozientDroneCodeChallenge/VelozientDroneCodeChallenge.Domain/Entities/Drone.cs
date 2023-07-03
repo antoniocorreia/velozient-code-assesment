@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VelozientDroneCodeChallenge.Model
+﻿namespace VelozientDroneCodeChallenge.Domain.Entities;
+public class Drone
 {
-    public class Drone
-    {
-        public string Name { get; }
-        public int MaximumWeight { get; }
+    public string Name { get; }
+    public int MaximumWeight { get; }
 
-        public Drone(string name, int maximumWeight)
-        {
-            this.Name = name;
-            this.MaximumWeight = maximumWeight;
-        }
+    public Drone(string name, int maximumWeight)
+    {
+        this.Name = name;
+        this.MaximumWeight = maximumWeight;
     }
+
 }

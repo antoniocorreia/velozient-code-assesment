@@ -1,0 +1,4 @@
+﻿global using VelozientDroneCodeChallenge.Domain.Entities;
+global using VelozientDroneCodeChallenge.Application.Interfaces;
+global using VelozientDroneCodeChallenge.Application.Exceptions;
+global using VelozientDroneCodeChallenge.Infrasctructure.Parser;
