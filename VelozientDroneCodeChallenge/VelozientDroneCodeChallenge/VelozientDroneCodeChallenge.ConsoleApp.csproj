@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VelozientDroneCodeChallenge.Application\VelozientDroneCodeChallenge.Application.csproj" />
-    <ProjectReference Include="..\VelozientDroneCodeChallenge.Services\VelozientDroneCodeChallenge.Infrastructure.csproj" />
+    <ProjectReference Include="..\VelozientDroneCodeChallenge.Infrastructure\VelozientDroneCodeChallenge.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
