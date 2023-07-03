@@ -29,7 +29,7 @@ namespace VelozientDroneCodeChallenge.Tests.FileTests
             File.WriteAllLines(path, fileLines);
 
             // Act
-            FileResult result = InputReader.ReadFile(path);
+            FileResult result = new InputReader().ReadFile(path);
 
             // Assert
             result.Should().NotBeNull();
@@ -49,7 +49,7 @@ namespace VelozientDroneCodeChallenge.Tests.FileTests
             string invalidPath = "invalidpath.txt";
 
             // Act
-            Action ac = () => { InputReader.ReadFile(invalidPath); };
+            Action ac = () => { new InputReader().ReadFile(invalidPath); };
 
             // Assert
             ac.Should().Throw<FileNotFoundException>();
@@ -72,7 +72,7 @@ namespace VelozientDroneCodeChallenge.Tests.FileTests
             File.WriteAllLines(path, fileLines);
 
             // Act
-            Action act = () => InputReader.ReadFile(path);
+            Action act = () => new InputReader().ReadFile(path);
 
             // Assert
             act.Should().Throw<MaximumPackageWeightExceeded>();

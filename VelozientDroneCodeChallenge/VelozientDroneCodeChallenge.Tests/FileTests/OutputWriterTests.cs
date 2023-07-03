@@ -26,7 +26,7 @@ namespace VelozientDroneCodeChallenge.Tests.FileTests
             };
 
             // Act
-            OutputWriter.Write(path, trips);
+            new OutputWriter().Write(path, trips);
 
             // Assert
             string[] fileContent = File.ReadAllLines(path);
