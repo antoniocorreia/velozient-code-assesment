@@ -3,12 +3,14 @@ using VelozientDroneCodeChallenge.Application.Model;
 
 namespace VelozientDroneCodeChallenge.Infrasctructure;
 
-public class InputReader
+public class InputReader : IInputReader
 {
-    public static FileResult ReadFile(string path)
+    public FileResult ReadFile(string path)
     {
+        Console.WriteLine($"Loading file {path}");
         var enumLines = File.ReadLines(path, Encoding.UTF8);
 
+        Console.WriteLine("Parsing drones and locations");
         DroneParser droneParser = new DroneParser();
         List<Drone> drones = droneParser.Parse<Drone>(enumLines);
 

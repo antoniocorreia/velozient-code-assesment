@@ -1,9 +1,7 @@
-﻿using VelozientDroneCodeChallenge.Domain.Entities;
-
-namespace VelozientDroneCodeChallenge.Infrasctructure;
-public class OutputWriter
+﻿namespace VelozientDroneCodeChallenge.Infrasctructure;
+public class OutputWriter : IOutputWriter
 {
-    public static void Write(string path, List<Trip> trips)
+    public void Write(string path, List<Trip> trips)
     {
         List<string> lines = new List<string>();
         IEnumerable<IGrouping<string,Trip>> groupTripsByDrone = trips.GroupBy(t=>t.Drone.Name).OrderBy(t=>t.Key);
@@ -31,6 +29,7 @@ public class OutputWriter
             lines.Add(Environment.NewLine);
         }
 
+        Console.WriteLine("Saving file output.txt, check your output directory.");
         File.WriteAllLines(path, lines);
     }
 }

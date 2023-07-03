@@ -9,7 +9,7 @@ public class DeliveryScheduler : IScheduler
     public List<Trip> Execute(FileResult dronesAndLocations)
     {
         var drones = dronesAndLocations.Drones.OrderByDescending(d => d.MaximumWeight).ToList();
-        var locations = dronesAndLocations.Locations;
+        var locations = dronesAndLocations.Locations.OrderBy(x=>x.PackageWeight);
 
         List<Trip> trips = new List<Trip>();
         
