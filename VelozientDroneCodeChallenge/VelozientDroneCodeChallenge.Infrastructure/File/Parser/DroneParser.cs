@@ -21,6 +21,8 @@ public class DroneParser : IParser
             drones.Add(new Drone(match.Groups["name"].Value, int.Parse(match.Groups["maximumWeight"].Value)));
         }
 
+        if (drones.Count > 100) throw new DroneSquadMaximumSizeExceeded();
+
         return new List<T>(drones as IEnumerable<T> ?? throw new BadlyFormattedFileException("drones"));
     }
 }

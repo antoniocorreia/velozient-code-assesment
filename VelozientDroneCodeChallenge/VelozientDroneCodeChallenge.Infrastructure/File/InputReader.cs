@@ -15,6 +15,11 @@ public class InputReader
         LocationParser locationParser = new LocationParser();
         List<Location> locations = locationParser.Parse<Location>(enumLines);
 
+        int maxDroneCapacity = drones.Max(x => x.MaximumWeight);
+        int maxLocationCapacity = locations.Max(x => x.PackageWeight);
+
+        if (maxLocationCapacity > maxDroneCapacity) throw new MaximumPackageWeightExceeded(maxLocationCapacity);
+
         return new FileResult(drones, locations);
     }
 }

@@ -55,6 +55,30 @@ namespace VelozientDroneCodeChallenge.Tests.FileTests
             ac.Should().Throw<FileNotFoundException>();
         }
 
-       
+        [Fact]
+        public void ReadFile_InvalidLocationPackageWeight_ThrowsMaximumPackageWeightExceededException()
+        {
+            // Arrange
+            string path = "testfile.txt";
+            string[] fileLines = new string[]
+            {
+                "[DroneA], [200], [DroneB], [250], [DroneC], [100]",
+                "[LocationA], [300]",
+                "[LocationB], [150]",
+                "[LocationC], [50]",
+                "[LocationD], [150]",
+                "[LocationE], [100]"
+            };
+            File.WriteAllLines(path, fileLines);
+
+            // Act
+            Action act = () => InputReader.ReadFile(path);
+
+            // Assert
+            act.Should().Throw<MaximumPackageWeightExceeded>();
+
+            // Clean up
+            File.Delete(path);
+        }
     }
 }

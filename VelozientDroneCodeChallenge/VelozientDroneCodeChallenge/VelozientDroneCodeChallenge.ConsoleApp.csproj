@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <None Update="Assets\Input.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

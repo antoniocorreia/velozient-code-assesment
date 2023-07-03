@@ -34,7 +34,7 @@ namespace VelozientDroneCodeChallenge.Tests.FileTests
             fileContent.Should().HaveCountGreaterThan(9); // 3 trips + 3 drone headers + 3 trip headers
             fileContent[0].Should().Be("[DroneA]");
             fileContent[1].Should().Be("Trip #1");
-            fileContent[2].Should().Be("[LocationA],[LocationB]");
+            fileContent[2].Should().Be("[LocationA], [LocationB]");
             
             // Clean up
             File.Delete(path);
