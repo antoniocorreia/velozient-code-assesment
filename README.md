@@ -33,7 +33,7 @@ I've chosen to use Clean Architecture principles and patterns that aim to achiev
 - The Application project contains the business logic, you can check the [exceptions](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Application/Exceptions), [interfaces](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Application/Interfaces), [model](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Application/Model), and [service](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Application/Services).
 - The Unit tests project, - using xUnit and Fluent assertions I've created a couple of tests for [Files](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Tests/FileTests), [Parses](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Tests/ParseTests), and [Services](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Tests/ServiceTests).
 
-![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/4b092f8d-54f0-419f-bc20-f10936dd83af)
+![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/178641c1-fbef-43b2-9a24-761d9109a081)
 
 
 
@@ -47,14 +47,17 @@ I've chosen to use Clean Architecture principles and patterns that aim to achiev
 You can run the project using Visual Studio with the above version, make sure your startup project is the ConsoleApp. 
 Also, take advantage of the IDE to run all the tests.
 
-![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/55a4cdb6-c284-46e0-8f79-44bb7d93418d)
+![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/fb0703cb-f4ff-49e9-8cc6-cdf8c9c36e0f)
+
 
 After running the project the console will display a log of the execution that looks like this
 
-![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/9a97f87b-1431-4a90-8136-51b8b5f25f58)
+![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/8bb3e65f-5d78-415c-a2d4-a9abd9e85f59)
+
 
 and the `Output.txt` file should be located at `VelozientDroneCodeChallenge.ConsoleApp/bin/Debug/net6.0/Assets/output.txt`
 
-![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/b4070b55-9ffe-455b-b29b-50e7c31482e2)
+![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/8bd9b4c5-e133-43a4-bcdc-09ab92d7b005)
+
 
 
