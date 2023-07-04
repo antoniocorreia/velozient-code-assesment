@@ -6,7 +6,7 @@ The locations with lighter packages are prioritized to be delivered first.
 
 A detailed description of DeliveryScheduler:
 
-The `DeliveryScheduler` class implements the `IScheduler` interface and contains a method called `Execute` that takes a `FileResult` object as input and returns a list of `Trip` objects.
+The [`DeliveryScheduler`](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Application/Services/DeliveryScheduler.cs) class implements the `IScheduler` interface and contains a method called `Execute` that takes a [`FileResult`](VelozientDroneCodeChallenge/VelozientDroneCodeChallenge.Application/Model/FileResult.cs) object as input and returns a list of `Trip` objects.
 
 - Retrieve the list of drones and locations from the `FileResult` object.
 - Sort the drones in descending order based on their maximum weight.
