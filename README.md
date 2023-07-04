@@ -48,3 +48,13 @@ You can run the project using Visual Studio with the above version, make sure yo
 Also, take advantage of the IDE to run all the tests.
 
 ![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/55a4cdb6-c284-46e0-8f79-44bb7d93418d)
+
+After running the project the console will display a log of the execution that looks like this
+
+![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/9a97f87b-1431-4a90-8136-51b8b5f25f58)
+
+and the `Output.txt` file should be located at `VelozientDroneCodeChallenge.ConsoleApp/bin/Debug/net6.0/Assets/output.txt`
+
+![image](https://github.com/antoniocorreia/velozient-code-assesment/assets/1815134/b4070b55-9ffe-455b-b29b-50e7c31482e2)
+
+
