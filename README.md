@@ -42,6 +42,7 @@ I've chosen to use Clean Architecture principles and patterns that aim to achiev
 - Visual Studio Community 2022 Version 17.6.1
 - Fluent Assertions (https://fluentassertions.com/)
 - xUnit (https://xunit.net/)
+- Microsoft.Extensions.DependencyInjection
 
 
 You can run the project using Visual Studio with the above version, make sure your startup project is the ConsoleApp. 
